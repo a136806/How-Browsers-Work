@@ -65,10 +65,16 @@ W3C (World Wide Web Consortium)
 
 
 #الهيكل العام لدي المتصفح:
-
+<br>
 <img src="http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/layers.png">
 
-- UI
-	جبهة المستخدم ، التي تتضمن كل شئ ثابت، كشريت العنوان و زر الرجوع
+- UI:
+	جبهة المستخدم ، التي تتضمن كل شئ ثابت، كشريت العنوان و زر الرجوع	
 
-- محرك المتصفح
+- The browser engine:
+اللي بيضبط الوجهات مع  rendering engine
+
+‫-‬	The rendering engine ‫:‬ 
+مسؤل عن عرض المحتويات المطلوبة.
+<br>
+كـدمج مكونات الــHTML5 مع الــCSS
