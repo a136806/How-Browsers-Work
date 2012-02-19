@@ -66,7 +66,6 @@ W3C (World Wide Web Consortium)
 
 #الهيكل العام لدي المتصفح:
 <br>
-<img src="http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/layers.png">
 
 - UI:
 	جبهة المستخدم ، التي تتضمن كل شئ ثابت، كشريت العنوان و زر الرجوع	
@@ -77,4 +76,24 @@ W3C (World Wide Web Consortium)
 - The rendering engine ‫:‬ 
 مسؤل عن عرض المحتويات المطلوبة.
 <br>
-كـدمج مكونات الــHTML5 مع الــCSS
+كـدمج مكونات الــHTML5 مع الــCSS وازهارها علي الشاشة.
+
+- Network:
+مسئول عن   التعامل مع بروتكول الــHTTP 
+
+- UI backend:
+يستخدم  في عرض الوجهات الــUI الاساسية من نظام التشغيل OS‪.‬
+
+- JavaScript interpreter:
+بيترجم و ينفذ كود الـJavaScript 
+
+- Data Storage:
+بتكون منصلة و لديها القدرة علي التخزين الدائم، تحتفض بمعلومات مثل الــCookies،
+تتمتع النسخة الجديدة HTML5 علي جميع مواصفات قواعد البينات بس بتكون خفيفة.
+‪'‬web database‪'‬
+
+<br>
+<img src="http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/layers.png">
+<br>
+
+جدير بالذكر ان Chrome‪,‬ غير كل المتصفحات ، يخلق  rendering engine الخاص لكل صفحة tab‪.‬
