@@ -50,3 +50,5 @@ W3C (World Wide Web Consortium)
 - A refresh and stop buttons for refreshing and stopping the loading of current documents
 - Home button that gets you to your home page
 
+جبهة الــUI ليس لها اي مواصفات رسمية ، بس دا بيكون اجتهاد و خبرة سنين و متصفحات بتنقل من بعض.
+الــHTML5 ليس له مواصفات معينة لالوجهات  الــUI  ،بس بيوصف شويت الحاجات المشتركة.
