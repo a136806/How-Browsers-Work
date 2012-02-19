@@ -43,9 +43,10 @@ W3C (World Wide Web Consortium)
 <br>
 
 معضم المتصفحات اليوم لها نفس الوجهة ، من ابحاجات المشترقة هي:
-+	Address bar for inserting the URI
-+	Back and forward buttons
-+		Bookmarking options
-+	A refresh and stop buttons for refreshing and stopping the loading of current documents
-+	Home button that gets you to your home page
+
+- Address bar for inserting the URI
+- Back and forward buttons
+- Bookmarking options
+- A refresh and stop buttons for refreshing and stopping the loading of current documents
+- Home button that gets you to your home page
 
