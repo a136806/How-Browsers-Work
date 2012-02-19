@@ -74,7 +74,7 @@ W3C (World Wide Web Consortium)
 - The browser engine:
 اللي بيضبط الوجهات مع  rendering engine
 
-‫-‬	The rendering engine ‫:‬ 
+- The rendering engine ‫:‬ 
 مسؤل عن عرض المحتويات المطلوبة.
 <br>
 كـدمج مكونات الــHTML5 مع الــCSS
