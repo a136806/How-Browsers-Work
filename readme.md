@@ -97,3 +97,9 @@ W3C (World Wide Web Consortium)
 <br>
 
 جدير بالذكر ان Chrome‪,‬ غير كل المتصفحات ، يخلق  rendering engine الخاص لكل صفحة tab‪.‬
+
+=====================
+###Chapter 2
+#THE RENDERING ENGINE
+=====================
+
