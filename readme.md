@@ -1,3 +1,5 @@
+<p dir="RTL">
+
 ## من انتم؟:
 أنا 
 <a href="mailto:yoga1290@gmail.com">يوسف جميل (Youssef Gamil)</a‪>‬
@@ -95,13 +97,12 @@ W3C (World Wide Web Consortium)
 <br>
 <img src="http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/layers.png">
 <br>
-<p>
 جدير بالذكر ان 
-Chrome‪,‬ 
-غير كل المتصفحات ،
-</p><p>
+‪<‬br‪>‬
+Chrome‪,‬ غير كل المتصفحات ،
+<br>
  يخلق rendering engine الخاص لكل صفحة (tab). 
-</p>
+<br>
 
 
 ###Chapter 2
@@ -109,6 +110,7 @@ Chrome‪,‬
 
 
 وضيفته هي  عرض المكونات المطلوبة علي الشاشة…
+<br>
  في اساس هو بيعرض الــHTML و الــXML و الصور. و لكنه قادر علي عرض مكونات اخري عن طريق plug‪-‬in او extension‪;‬
 مثال: عرض الــPDF عن طريق PDF viewing plug‪-‬in.
 .‫.‬لكننا سنركز علي المهام الاساسي، و هو عرض الصور ،و الــHTML و الـCSS .
@@ -138,3 +140,5 @@ Mac & Windows.
 يبدأ الـrendering engine بتكوين شجرة من الـDOM بعد معالجة الـHTML، تسمي بــ‪"‬content tree‪"‬.
 تعالج الـCSS اللي موجود داخل الصفة و الموجود خارجها اذا احتاجته.
 من معلومات الـCSS و اوامر الـHTML المتحكمة في المرئيات، يكون شجرة اخري تسمي render tree‪"‬". 
+
+</p>
