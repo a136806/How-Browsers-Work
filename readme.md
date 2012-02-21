@@ -1,4 +1,4 @@
-<div style="float: right">
+<div style="direction: right">
 
 ## من انتم؟:
 
