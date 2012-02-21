@@ -1,6 +1,3 @@
-‪<‬style‪>‬
-p {direction:RTL; unicode-bidi:embed;}
-‪</‬style‪>‬
 
 ## من انتم؟:
 
@@ -56,11 +53,11 @@ p {direction:RTL; unicode-bidi:embed;}
 
 معضم المتصفحات اليوم لها نفس الوجهة ، من ابحاجات المشترقة هي:
 
-‏- Address bar for inserting the URI
-‏- Back and forward buttons
-‏- Bookmarking options
-‏- A refresh and stop buttons for refreshing and stopping the loading of current documents
-‏- Home button that gets you to your home page
+- Address bar for inserting the URI
+- Back and forward buttons
+- Bookmarking options
+- A refresh and stop buttons for refreshing and stopping the loading of current documents
+- Home button that gets you to your home page
 
 ‪<‬br>
 جبهة الــUI ليس لها اي مواصفات رسمية ، بس دا بيكون اجتهاد و خبرة سنين و متصفحات بتنقل من بعض.
