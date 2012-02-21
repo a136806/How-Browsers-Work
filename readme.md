@@ -95,8 +95,11 @@ W3C (World Wide Web Consortium)
 <br>
 <img src="http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/layers.png">
 <br>
-
-جدير بالذكر ان Chrome‪,‬ غير كل المتصفحات ، يخلق  rendering engine الخاص لكل صفحة tab‪.‬
+<p>
+جدير بالذكر ان Chrome‪,‬ غير كل المتصفحات ،
+</p><p>
+ يخلق rendering engine الخاص لكل صفحة (tab). 
+</p>
 
 
 ###Chapter 2
