@@ -98,8 +98,38 @@ W3C (World Wide Web Consortium)
 
 جدير بالذكر ان Chrome‪,‬ غير كل المتصفحات ، يخلق  rendering engine الخاص لكل صفحة tab‪.‬
 
-=====================
+
 ###Chapter 2
 #THE RENDERING ENGINE
-=====================
 
+
+وضيفته هي  عرض المكونات المطلوبة علي الشاشة…
+ في اساس هو بيعرض الــHTML و الــXML و الصور. و لكنه قادر علي عرض مكونات اخري عن طريق plug‪-‬in او extension‪;‬
+مثال: عرض الــPDF عن طريق PDF viewing plug‪-‬in.
+.‫.‬لكننا سنركز علي المهام الاساسي، و هو عرض الصور ،و الــHTML و الـCSS .
+
+
+## RENDERING ENGINES
+
+المتصفحات اللي بنكلم عنها بتتكون من ٢ rendering engines،  و هما:
+Firefox بيستخدم Gecko
+Safari و Chrome بيستخدموا Webkit.
+
+Webkit هو مفتوح المصدر
+و الذي بدأ خصيصا للينكس Linux ، ثم عدلته آبل Apple ليعمل علي  الماك و الويندوز.
+Mac & Windows.
+
+لمزيد من المعلومات:
+<a href="http://webkit.org">Webkit.org</a>
+
+##THE MAIN FLOW:
+
+يبدأ الــrendering engine بتجميع المكونات المطلوبة من الشبكة Network Layer.
+غالبا، بيقسمها علي ٨ كيلو قطعة.
+الخطوات الاساسية للــrendering engine تتمثل في الخطوات التالية:
+
+<img src="http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/flow.png">
+
+يبدأ الـrendering engine بتكوين شجرة من الـDOM بعد معالجة الـHTML، تسمي بــ‪"‬content tree‪"‬.
+تعالج الـCSS اللي موجود داخل الصفة و الموجود خارجها اذا احتاجته.
+من معلومات الـCSS و اوامر الـHTML المتحكمة في المرئيات، يكون شجرة اخري تسمي render tree‪"‬". 
