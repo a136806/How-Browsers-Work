@@ -3,11 +3,11 @@
 
 ‪<‬p dir='RTL'>
 أنا 
-‏<a href="mailto:yoga1290@gmail.com">يوسف جميل (Youssef Gamil)</a‪>‬
+<a href="mailto:yoga1290@gmail.com">يوسف جميل (Youssef Gamil)</a‪>‬
  طالب كمبيوتر ,حاسيس ان فيه وقت كتير في حياتي عشان اعمل حاجات كتير لتطوير أشياء مفيدة... أو ترجمة كتاب زي ده!
-‏‪<‬br‪>‬
+‪<‬br‪>‬
 هدا التكست ملخص و مترجم من كتاب 
-‏<a href="http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/">HTML5 ROCKS/ HOW BROWSERS WORK: BEHIND THE SCENES OF MODERN WEB BROWSERS</a>
+<a href="http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/">HTML5 ROCKS/ HOW BROWSERS WORK: BEHIND THE SCENES OF MODERN WEB BROWSERS</a>
 الذي يلخص ابحاث دفيلبر اسرائيلية جوجلية "تالي جارسريل" , التي امضت وقت طويل في مراجعة مصادر المتصفحات.
 
 
@@ -45,7 +45,7 @@
 
 مهمة المتصفح الأساسية هي تجميع المكونات التتي تحتاج اليها من الانترنت و عن طريق طلبها من الخادم و ثم اطلاقها علي شاشتك! المكونات غالبا تكون صفحات HTML , PDF , PDF , أو صور أو أخري. عنوان المكونات يكون متحدد من المستخم عن طريق الـURI (Uniform Resource Identifier).
 الطريقة التي يفسر بها المتصفح صفحات الــHTML ، بتكون مشروحة بتفاصيل بمواصفات الـــ
-‏HTML و CSS المطفق عليها في العالم من الـــ W3C (World Wide Web Consortium)
+HTML و CSS المطفق عليها في العالم من الـــ W3C (World Wide Web Consortium)
 
 زمان، كان كل متصفح بيخترع مواصفاته ، فكانت الحياة صعبة علي المطورين.بس دلوقتي معضم المتصفحات تعمل بنفس الطريقة.
 
@@ -72,38 +72,38 @@
 ‪<‬br>
 
 
-‏- UI:
+- UI:
 	جبهة المستخدم ، التي تتضمن كل شئ ثابت، كشريت العنوان و زر الرجوع	
-‏- The browser engine:
+- The browser engine:
  اللي بيضبط الوجهات مع  rendering engine
 
-‏- The rendering engine ‫:‬ 
+- The rendering engine ‫:‬ 
  مسؤل عن عرض المحتويات المطلوبة.كـدمج مكونات الــHTML5 مع الــCSS وازهارها علي الشاشة.
 
-‏- Network:
+- Network:
 مسئول عن   التعامل مع بروتكول الــHTTP 
 
-‏- UI backend:
+- UI backend:
 يستخدم  في عرض الوجهات الــUI الاساسية من نظام التشغيل OS‪.‬
 
-‏- JavaScript interpreter:
+- JavaScript interpreter:
 بيترجم و ينفذ كود الـJavaScript 
 
-‏- Data Storage:
+- Data Storage:
 بتكون منصلة و لديها القدرة علي التخزين الدائم، تحتفض بمعلومات مثل الــCookies،
 تتمتع النسخة الجديدة HTML5 علي جميع مواصفات قواعد البينات بس بتكون خفيفة.
-‏‪'‬web database‪'‬
+‪'‬web database‪'‬
 
 ‪<‬br>
-‏<img src="http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/layers.png">
+<img src="http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/layers.png">
 ‪<‬br>
 جدير بالذكر ان Chrome‪,‬ غير كل المتصفحات ، يخلق rendering engine الخاص لكل صفحة (tab). 
 ‪<‬br>
 
 
 
-‏###Chapter 2
-‏#THE RENDERING ENGINE
+###Chapter 2
+#THE RENDERING ENGINE
 
 ‪<‬p dir='RTL'>
 
@@ -115,26 +115,26 @@
 
 ‪<‬/p>
 
-‏## RENDERING ENGINES
+## RENDERING ENGINES
 
 
 ‪<‬p dir='RTL'>
 
 المتصفحات اللي بنكلم عنها بتتكون من ٢ rendering engines،  و هما:
-‏Firefox بيستخدم Gecko
-‏Safari و Chrome بيستخدموا Webkit.
+Firefox بيستخدم Gecko
+Safari و Chrome بيستخدموا Webkit.
 
-‏Webkit هو مفتوح المصدر
+Webkit هو مفتوح المصدر
 و الذي بدأ خصيصا للينكس Linux ، ثم عدلته آبل Apple ليعمل علي  الماك و الويندوز.
-‏Mac & Windows.
+Mac & Windows.
 
 لمزيد من المعلومات:
-‏<a href="http://webkit.org">Webkit.org</a>
+<a href="http://webkit.org">Webkit.org</a>
 
 
 ‪<‬/p>
 
-‏##THE MAIN FLOW:
+##THE MAIN FLOW:
 
 ‪<‬p dir='RTL'>
 
@@ -142,7 +142,7 @@
 غالبا، بيقسمها علي ٨ كيلو قطعة.
 الخطوات الاساسية للــrendering engine تتمثل في الخطوات التالية:
 
-‏<img src="http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/flow.png">
+<img src="http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/flow.png">
 
 يبدأ الـrendering engine بتكوين شجرة من الـDOM بعد معالجة الـHTML، تسمي بــ‪"‬content tree‪"‬.
 تعالج الـCSS اللي موجود داخل الصفة و الموجود خارجها اذا احتاجته.
