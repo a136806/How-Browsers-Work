@@ -5,10 +5,15 @@
 
 أنا 
 <a href="mailto:yoga1290@gmail.com">يوسف جميل (Youssef Gamil)</a‪>‬
+
  طالب كمبيوتر ,حاسيس ان فيه وقت كتير في حياتي عشان اعمل حاجات كتير لتطوير أشياء مفيدة... أو ترجمة كتاب زي ده!
+
 ‪<‬br‪>‬
 هدا التكست ملخص و مترجم من كتاب 
+
 <a href="http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/">HTML5 ROCKS/ HOW BROWSERS WORK: BEHIND THE SCENES OF MODERN WEB BROWSERS</a>
+
+
 الذي يلخص ابحاث دفيلبر اسرائيلية جوجلية "تالي جارسريل" , التي امضت وقت طويل في مراجعة مصادر المتصفحات.
 
 
@@ -22,11 +27,10 @@
 
 
 
-‫-‬ المقدمة
-	‫-‬ المتصفحات اللي حنتكلم عنها
-	‫-‬ مهمة المتثصفح الاساسية
-	- هيكل المتصفح
-‫…….‬
+المقدمة ‪-‬ 
+	المتصفحات اللي حنتكلم عنها ‪-‬	
+	مهمة المتثصفح الاساسية ‪-‬	
+هيكل المتصفح ‪-‬	
 
 
 
@@ -70,8 +74,6 @@ HTML و CSS المطفق عليها في العالم من الـــ W3C (World
 
 #الهيكل العام لدي المتصفح:
 
-‪<‬br>
-
 
 - UI:
 	جبهة المستخدم ، التي تتضمن كل شئ ثابت، كشريت العنوان و زر الرجوع	
@@ -96,10 +98,11 @@ HTML و CSS المطفق عليها في العالم من الـــ W3C (World
 ‪'‬web database‪'‬
 
 ‪<‬br>
-<img src="http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/layers.png">
-‪<‬br>
+<img src="http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/layers.png">‪<‬br>
+
+
 جدير بالذكر ان Chrome‪,‬ غير كل المتصفحات ، يخلق rendering engine الخاص لكل صفحة (tab). 
-‪<‬br>
+
 
 
 
@@ -143,7 +146,7 @@ Mac & Windows.
 غالبا، بيقسمها علي ٨ كيلو قطعة.
 الخطوات الاساسية للــrendering engine تتمثل في الخطوات التالية:
 
-<img src="http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/flow.png">
+<img src="http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/flow.png"><br>
 
 يبدأ الـrendering engine بتكوين شجرة من الـDOM بعد معالجة الـHTML، تسمي بــ‪"‬content tree‪"‬.
 تعالج الـCSS اللي موجود داخل الصفة و الموجود خارجها اذا احتاجته.
