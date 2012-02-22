@@ -84,7 +84,7 @@
 
 
 
-# الهيكل العام لدي المتصفح:
+‎‪#‬# الهيكل العام لدي المتصفح:
 
 
 ‏- UI:
@@ -199,6 +199,7 @@
 
 <br>
 ‪<‬img src‪="http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/image008.jpg"‬ ‪>‬
+<br>
 
 
 
