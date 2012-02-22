@@ -23,7 +23,7 @@
 
 ......
 
-#الفهرس:
+# الفهرس:
 
 
 الفهرس‪:‬
@@ -158,7 +158,7 @@
 غالبا، بيقسمها علي ٨ كيلو قطعة.
 الخطوات الاساسية للــrendering engine تتمثل في الخطوات التالية:
 
-‏<img src="http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/flow.png"><br>
+<img src="http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/flow.png">
 
 يبدأ الـrendering engine بتكوين شجرة من الـDOM بعد مرحلة المعالجة للـHTML، تسمي بــ‪"‬content tree‪"‬.
 تعالج الـCSS اللي موجود داخل الصفة و الموجود خارجها اذا احتاجته.
@@ -184,12 +184,14 @@
 
 مثال عن الخطوات لمحرك الـWebkit:
 
+
 ‏‪<‬img src‪="http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/webkitflow.png">‬
-‏‪<‬br‪>‬
 
 
 مثال عن الخطوات لمحرك الـGecko:
 
+
 ‏‪<‬img src‪="http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/image008.jpg">‬
-‏‪<‬br‪>‬
+
+
 
