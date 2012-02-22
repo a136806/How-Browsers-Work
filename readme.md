@@ -113,7 +113,7 @@
 <img src="http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/layers.png">
 
 
-جدير بالذكر ان Chrome‪,‬ غير كل المتصفحات ، يخلق rendering engine الخاص لكل صفحة (tab). 
+جدير بالذكر ان Chrome‪,‬ غير كل المتصفحات ، يخلق rendering engine الخاص لكل صفحة/tab. 
 
 
 
@@ -193,7 +193,7 @@
 مثال عن الخطوات لمحرك الـGecko:
 
 
-‏‪<‬img src‪="http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/image008.jpg"‬ ‪>‬
+‪<‬img src‪="http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/image008.jpg"‬ ‪>‬
 
 
 
