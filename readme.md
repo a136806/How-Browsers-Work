@@ -117,13 +117,15 @@
 
 
 
-‏### Chapter 2
+### Chapter 2
 
 
-‏# THE RENDERING ENGINE
+# THE RENDERING ENGINE
 
 
 
+<br>
+<br>
 وضيفته هي  عرض المكونات المطلوبة علي الشاشة…
  في اساس هو بيعرض الــHTML و الــXML و الصور. و لكنه قادر علي عرض مكونات اخري عن طريق plug‪-‬in او extension‪;‬
 مثال: عرض الــPDF عن طريق PDF viewing plug‪-‬in.
@@ -153,7 +155,7 @@
 
 
 
-‏## THE MAIN FLOW:
+## THE MAIN FLOW:
 
 
 
