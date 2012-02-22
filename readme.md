@@ -191,11 +191,13 @@
 
 
 ‪<‬img src‪="http://www.html5rocks.com/en/tutorials/internals‬/‪howbrowserswork/webkitflow.png"‬ ‪>‬
+<br>
 
 
 مثال عن الخطوات لمحرك الـGecko:
 
 
+<br>
 ‪<‬img src‪="http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/image008.jpg"‬ ‪>‬
 
 
