@@ -110,7 +110,7 @@
 ‏‪'‬web database‪'‬
 
 
-‏<img src="http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/layers.png">
+<img src="http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/layers.png">
 
 
 جدير بالذكر ان Chrome‪,‬ غير كل المتصفحات ، يخلق rendering engine الخاص لكل صفحة (tab). 
@@ -137,6 +137,7 @@
 
 
 المتصفحات اللي بنكلم عنها بتتكون من ٢ rendering engines،  و هما:
+
 ‏Firefox بيستخدم Gecko
 ‏Safari و Chrome بيستخدموا Webkit.
 
@@ -145,6 +146,7 @@
 ‏Mac & Windows.
 
 لمزيد من المعلومات:
+
 ‏<a href="http://webkit.org">Webkit.org</a>
 
 
@@ -158,7 +160,7 @@
 غالبا، بيقسمها علي ٨ كيلو قطعة.
 الخطوات الاساسية للــrendering engine تتمثل في الخطوات التالية:
 
-<img src="http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/flow.png">
+<img src="http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/flow.png" >
 
 يبدأ الـrendering engine بتكوين شجرة من الـDOM بعد مرحلة المعالجة للـHTML، تسمي بــ‪"‬content tree‪"‬.
 تعالج الـCSS اللي موجود داخل الصفة و الموجود خارجها اذا احتاجته.
@@ -185,13 +187,13 @@
 مثال عن الخطوات لمحرك الـWebkit:
 
 
-‏‪<‬img src‪="http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/webkitflow.png">‬
+‪<‬img src‪="http://www.html5rocks.com/en/tutorials/internals‬/‪howbrowserswork/webkitflow.png"‬ ‪>‬
 
 
 مثال عن الخطوات لمحرك الـGecko:
 
 
-‏‪<‬img src‪="http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/image008.jpg">‬
+‏‪<‬img src‪="http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/image008.jpg"‬ ‪>‬
 
 
 
