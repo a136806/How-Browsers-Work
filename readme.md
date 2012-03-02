@@ -120,7 +120,7 @@
 
 ‏### Chapter 2
 
-‏## THE RENDERING ENGINE
+‏## THE RENDERING ENGINE ‪##‬
 
 
 
@@ -214,3 +214,16 @@
 
 ‏### Chapter 3
 ‏# PARSING — GENERAL
+
+التحليل أو الـParsing هي عملية هامة جدا في المحرك ‪(‬Rendering Engine‪)‬، وسوف ندخلها أكثر عمقا. دعونا نبدأ مع مقدمة قليلا عن تحليل.
+
+تحليل وثيقة يعني ترجمتها إلى هيكل منطقي - و احياناً يمكن فهمها واستخدامها. نتيجة التحليل عادة ما يكون شجرة من العقد ‪(‬nodes‪)‬ التي تمثل هيكل الوثيقة.
+وهي تسمى شجرة تحليل أو parse tree أو syntax tree.
+
+مثال - ترجمة التعبير 2 + 3-1 يمكن أن تكون كهذه الشجرة:
+
+
+‏‪<‬img src‪="http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/image009.png">‬
+
+‏‪#‬ Grammars‪:‬
+
