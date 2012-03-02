@@ -120,9 +120,7 @@
 
 ‏### Chapter 2
 
-
-
-‏# THE RENDERING ENGINE
+‏## THE RENDERING ENGINE
 
 
 
@@ -194,7 +192,6 @@
 
 ‏<img src="http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/webkitflow.png" >
 
-‏‪[‬IMG http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/webkitflow.png‪]‬
 
 مثال عن الخطوات لمحرك الـجيكو (Gecko):
 
