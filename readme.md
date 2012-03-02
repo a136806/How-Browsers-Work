@@ -84,7 +84,7 @@
 
 
 
-‎‪#‬# الهيكل العام لدي المتصفح:
+‪#‬# الهيكل العام لدي المتصفح:
 
 
 ‏- UI:
@@ -110,22 +110,22 @@
 ‏‪'‬web database‪'‬
 
 
-<img src="http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/layers.png">
+‏<img src="http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/layers.png">
 
 
 جدير بالذكر ان Chrome‪,‬ غير كل المتصفحات ، يخلق rendering engine الخاص لكل صفحة/tab. 
 
 
 
-### Chapter 2
+‏### Chapter 2
 
 
-# THE RENDERING ENGINE
+‏# THE RENDERING ENGINE
 
 
 
-<br>
-<br>
+‏<br>
+‏<br>
 وضيفته هي  عرض المكونات المطلوبة علي الشاشة…
  في اساس هو بيعرض الــHTML و الــXML و الصور. و لكنه قادر علي عرض مكونات اخري عن طريق plug‪-‬in او extension‪;‬
 مثال: عرض الــPDF عن طريق PDF viewing plug‪-‬in.
@@ -141,8 +141,8 @@
 
 المتصفحات اللي بنكلم عنها بتتكون من ٢ rendering engines،  و هما:
 
-‏Firefox بيستخدم Gecko
-‏Safari و Chrome بيستخدموا Webkit.
+‏Firefox بيستخدم الجيكو (Gecko)
+‏Safari و Chrome بيستخدموا الويب-كيت (Webkit).
 
 ‏Webkit هو مفتوح المصدر
 و الذي بدأ خصيصا للينكس Linux ، ثم عدلته آبل Apple ليعمل علي  الماك و الويندوز.
@@ -155,7 +155,7 @@
 
 
 
-## THE MAIN FLOW:
+‏## THE MAIN FLOW:
 
 
 
@@ -163,7 +163,7 @@
 غالبا، بيقسمها علي ٨ كيلو قطعة.
 الخطوات الاساسية للــrendering engine تتمثل في الخطوات التالية:
 
-<img src="http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/flow.png" >
+‏<img src="http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/flow.png" >
 
 يبدأ الـrendering engine بتكوين شجرة من الـDOM بعد مرحلة المعالجة للـHTML، تسمي بــ‪"‬content tree‪"‬.
 تعالج الـCSS اللي موجود داخل الصفة و الموجود خارجها اذا احتاجته.
@@ -187,19 +187,24 @@
 لن ينتظر حتى يتم تحليل جميع HTML قبل البدء في بناء وتخطيط الشجرة render tree.
 و ييتم تحليل أجزاء من المحتوى وعرضها، و تستمرت العملية مع بقية محتويات التي تأتي من الشبكة.
 
-مثال عن الخطوات لمحرك الـWebkit:
+مثال عن الخطوات لمحرك الويب-كيت (Webkit):
 
 
-‪<‬img src‪="http://www.html5rocks.com/en/tutorials/internals‬/‪howbrowserswork/webkitflow.png"‬ ‪>‬
-<br>
+‏‪<‬img src‪="http://www.html5rocks.com/en/tutorials/internals‬/‪howbrowserswork/webkitflow.png"‬ ‪>‬
+‏<br>
 
 
-مثال عن الخطوات لمحرك الـGecko:
+مثال عن الخطوات لمحرك الـجيكو (Gecko):
 
 
-<br>
-‪<‬img src‪="http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/image008.jpg"‬ ‪>‬
-<br>
+‏<br>
+‏‪<‬img src‪="http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/image008.jpg"‬ ‪>‬
+‏<br>
 
 
+‏Gecko يستدعي الشجرة التي أنشانها في مرحلة التلوين ‪(‬Render Tree‪)‬،و يكون شجرة الـ"Frame Tree".
+كل خلية منها عبارة عن Frame (إطار أو جزء من الصفحة).
 
+يستخدم الويب-كيت (WebKit) الـــــ‪"‬layout‪"‬ لتحديد اماكن المكونات ، وتعرف بالظ"Reflow" في المحرك الـجيكو.(Gecko)
+
+"آتاشمنت" أو "Attachment" ،هي اسم الذي يطلقه الويب-كيت (WebKit) علي ما يتكون من دمجك خليات شجرة الـDOM أو DOM Nodes مع المعلومات المرئية عنها، وذلك لتكوين شجرة الـRender أو الـ‪"‬Render Tree‪"‬.
