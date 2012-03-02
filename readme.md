@@ -87,6 +87,7 @@
 ‪#‬# الهيكل العام لدي المتصفح:
 
 
+
 ‏- UI:
 	جبهة المستخدم ، التي تتضمن كل شئ ثابت، كشريت العنوان و زر الرجوع	
 ‏- The browser engine:
@@ -113,7 +114,7 @@
 ‏<img src="http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/layers.png">
 
 
-جدير بالذكر ان Chrome‪,‬ غير كل المتصفحات ، يخلق rendering engine الخاص لكل صفحة/tab. 
+جدير بالذكر ان Chrome‪,‬ غير كل المتصفحات ، يخلق rendering engine الخاص لكل صفحة أو tab. 
 
 
 
@@ -191,17 +192,13 @@
 
 
 
-‏‪<‬img src‪="http://www.html5rocks.com/en/tutorials/internals‬/‪howbrowserswork/webkitflow.png"‬ ‪>‬
+‏<img src="http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/‪webkitflow‬.png" >
 
 
 مثال عن الخطوات لمحرك الـجيكو (Gecko):
 
 
-
-
-
-‏‪<‬img src‪="http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/image008.jpg"‬ ‪>‬
-
+‏<img src="http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/‪image008.jpg‬" >
 
 
 
@@ -217,13 +214,12 @@
 
 
 
-
-‏‪###‬ Chapter 3
-
+‏### ‪###‬ Chapter 3
 
 
 
-‏‪#‬ PARSING — GENERAL
+
+‏# ‪#‬ PARSING — GENERAL
 
 
 
