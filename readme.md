@@ -192,13 +192,14 @@
 
 
 
-‏<img src="http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/‪webkitflow‬.png" >
+‏<img src="http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/webkitflow.png" >
 
+‏‪[‬IMG http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/webkitflow.png‪]‬
 
 مثال عن الخطوات لمحرك الـجيكو (Gecko):
 
 
-‏<img src="http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/‪image008.jpg‬" >
+‏<img src="http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/image008.jpg" >
 
 
 
@@ -214,13 +215,5 @@
 
 
 
-‏### ‪###‬ Chapter 3
-
-
-
-
-‏# ‪#‬ PARSING — GENERAL
-
-
-
-
+‏### Chapter 3
+‏# PARSING — GENERAL
