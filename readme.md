@@ -120,12 +120,12 @@
 ‏### Chapter 2
 
 
+
 ‏# THE RENDERING ENGINE
 
 
 
-‏<br>
-‏<br>
+
 وضيفته هي  عرض المكونات المطلوبة علي الشاشة…
  في اساس هو بيعرض الــHTML و الــXML و الصور. و لكنه قادر علي عرض مكونات اخري عن طريق plug‪-‬in او extension‪;‬
 مثال: عرض الــPDF عن طريق PDF viewing plug‪-‬in.
@@ -188,20 +188,27 @@
 و ييتم تحليل أجزاء من المحتوى وعرضها، و تستمرت العملية مع بقية محتويات التي تأتي من الشبكة.
 
 مثال عن الخطوات لمحرك الويب-كيت (Webkit):
+‏‪<‬br‪>‬
+
 
 
 ‏‪<‬img src‪="http://www.html5rocks.com/en/tutorials/internals‬/‪howbrowserswork/webkitflow.png"‬ ‪>‬
-‏<br>
 
 
+
+‏‪<‬br‪>‬
 مثال عن الخطوات لمحرك الـجيكو (Gecko):
+‏‪<‬br‪>‬
 
 
-‏<br>
+
+
 ‏‪<‬img src‪="http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/image008.jpg"‬ ‪>‬
-‏<br>
 
 
+
+
+‏‪<‬br‪>‬
 ‏Gecko يستدعي الشجرة التي أنشانها في مرحلة التلوين ‪(‬Render Tree‪)‬،و يكون شجرة الـ"Frame Tree".
 كل خلية منها عبارة عن Frame (إطار أو جزء من الصفحة).
 
@@ -212,7 +219,16 @@
 فرق بسيت بين الجيكو و الويب-كيت، ان الجيكو بيكون فيه مرحلة الـ"Content Sink" بين شجرة الـDOM أو ‪(‬DOM Tree‪)‬ و الـHTML ، و هي لا تغير في النتيجة عن الويب-كيت، و لكنها عامل لتكوين الـDOM.
 سنتحدث عنها فيما بعد.
 
+
+
+
 ‏‪###‬ Chapter 3
 
+
+
+
 ‏‪#‬ PARSING — GENERAL
+
+
+
 
