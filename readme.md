@@ -9,8 +9,9 @@
  طالب كمبيوتر ,حاسيس ان فيه وقت كتير في حياتي عشان اعمل حاجات كتير لتطوير أشياء مفيدة... أو ترجمة كتاب زي ده!
 
 
-هدا التكست ملخص و مترجم من كتاب 
-‏‪[http://www.html5rocks.com/en/tutorials/](‬HTML5 ROCKS ‪/‬ HOW BROWSERS WORK‪:‬ BEHIND THE SCENES OF MODERN WEB BROWSER‪)‬
+هدا التكست ملخص و مترجم من كتاب
+ 
+‏‪[‬HTML5 ROCKS ‪/‬ HOW BROWSERS WORK‪:‬ BEHIND THE SCENES OF MODERN WEB BROWSER‪](http://www.html5rocks.com/en/tutorials/)‬
 
 ‏<a href="http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/">HTML5 ROCKS/ HOW BROWSERS WORK: BEHIND THE SCENES OF MODERN WEB BROWSERS</a>
 
@@ -219,6 +220,8 @@
 
 مثال — ٢+٣-١ ممكن تمثيلها في:
 
+‏‪![Figure ‬5‪: mathematical expression tree node](http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/image009.png)‬
+
 ‏‪<‬img src‪="http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/image009.png"‬ ‪/>‬
 
 
@@ -277,7 +280,8 @@
 
 ‏‪###‬ Formal definitions for vocabulary and syntax
 
-في الواقع، النحو ذات نفسه بيصف بالـ‪[‬regular expressions‪](http://www.regular-expressions.info/).‬
+في الواقع، النحو ذات نفسه بيصف بالـ
+‏‪[‬regular expressions‪](http://www.regular-expressions.info/).‬
 
 
 
