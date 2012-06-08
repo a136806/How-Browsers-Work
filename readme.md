@@ -13,8 +13,6 @@
  
 ‏‪[‬HTML5 ROCKS ‪/‬ HOW BROWSERS WORK‪:‬ BEHIND THE SCENES OF MODERN WEB BROWSER‪](http://www.html5rocks.com/en/tutorials/)‬
 
-‏<a href="http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/">HTML5 ROCKS/ HOW BROWSERS WORK: BEHIND THE SCENES OF MODERN WEB BROWSERS</a>
-
 
 الذي يلخص ابحاث دفيلبر اسرائيلية جوجلية "تالي جارسريل" , التي امضت وقت طويل في مراجعة مصادر المتصفحات.
 
@@ -72,11 +70,11 @@
 
 معضم المتصفحات اليوم لها نفس الوجهة ، من ابحاجات المشترقة هي:
 
-‏- Address bar for inserting the URI
-‏- Back and forward buttons
-‏- Bookmarking options
-‏- A refresh and stop buttons for refreshing and stopping the loading of current documents
-‏- Home button that gets you to your home page
+‏‪*‬ Address bar for inserting the URI
+‏‪*‬ Back and forward buttons
+‏‪*‬ Bookmarking options
+‏‪*‬ A refresh and stop buttons for refreshing and stopping the loading of current documents
+‏‪*‬ Home button that gets you to your home page
 
 
 جبهة الــUI ليس لها اي مواصفات رسمية ، بس دا بيكون اجتهاد و خبرة سنين و متصفحات بتنقل من بعض.
@@ -90,37 +88,37 @@
 
 
 
-‏- UI:
+‏‪*‬ UI:
 	جبهة المستخدم ، التي تتضمن كل شئ ثابت، كشريت العنوان و زر الرجوع	
-‏- The browser engine:
+‏‪*‬ The browser engine:
  اللي بيضبط الوجهات مع  rendering engine
 
-‏- The rendering engine ‫:‬ 
+‏‪*‬ The rendering engine ‫:‬ 
  مسؤل عن عرض المحتويات المطلوبة.كـدمج مكونات الــHTML5 مع الــCSS وازهارها علي الشاشة.
 
-‏- Network:
+‏‪*‬ Network:
 مسئول عن   التعامل مع بروتكول الــHTTP 
 
-‏- UI backend:
+‏‪*‬ UI backend:
 يستخدم  في عرض الوجهات الــUI الاساسية من نظام التشغيل OS‪.‬
 
-‏- JavaScript interpreter:
+‏‪*‬ JavaScript interpreter:
 بيترجم و ينفذ كود الـJavaScript 
 
-‏- Data Storage:
+‏‪*‬ Data Storage
 بتكون منصلة و لديها القدرة علي التخزين الدائم، تحتفض بمعلومات مثل الــCookies،
 تتمتع النسخة الجديدة HTML5 علي جميع مواصفات قواعد البينات بس بتكون خفيفة.
 ‏‪'‬web database‪'‬
 
-
-‏<img src="http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/layers.png">
-
+‏‪![Figure 1: Browser main components.](http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/layers.png)‬
 
 جدير بالذكر ان Chrome‪,‬ غير كل المتصفحات ، يخلق rendering engine الخاص لكل صفحة أو tab. 
 
 
 
 ‏### Chapter 2
+
+
 
 ‏THE RENDERING ENGINE ‪##‬
 
@@ -161,7 +159,7 @@
 غالبا، بيقسمها علي ٨ كيلو قطعة.
 الخطوات الاساسية للــrendering engine تتمثل في الخطوات التالية:
 
-‏<img src="http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/flow.png" >
+‏‪![Figure 2: Rendering engine basic flow](http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/flow.png)‬
 
 يبدأ الـrendering engine بتكوين شجرة من الـDOM بعد مرحلة المعالجة للـHTML، تسمي بــ‪"‬content tree‪"‬.
 تعالج الـCSS اللي موجود داخل الصفة و الموجود خارجها اذا احتاجته.
@@ -187,16 +185,12 @@
 
 مثال عن الخطوات لمحرك الويب-كيت (Webkit):
 
-
-
-‏<img src="http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/webkitflow.png" >
-
+‏‪![Figure 3: Webkit main flow](http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/webkitflow.png)‬
 
 مثال عن الخطوات لمحرك الـجيكو (Gecko):
 
-
-‏<img src="http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/image008.jpg" >
-
+‪![‬
+‏‪Figure 4: Mozilla's Gecko rendering engine main flow(3.6)](http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/image008.jpg)‬
 
 
 ‏Gecko يستدعي الشجرة التي أنشانها في مرحلة التلوين ‪(‬Render Tree‪)‬،و يكون شجرة الـ"Frame Tree".
@@ -221,9 +215,6 @@
 مثال — ٢+٣-١ ممكن تمثيلها في:
 
 ‏‪![Figure ‬5‪: mathematical expression tree node](http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/image009.png)‬
-
-‏‪<‬img src‪="http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/image009.png"‬ ‪/>‬
-
 
 
 ‏## 3.1.1 Grammars
