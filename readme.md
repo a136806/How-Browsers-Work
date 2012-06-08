@@ -10,11 +10,13 @@
 
 
 هدا التكست ملخص و مترجم من كتاب 
+‏‪[http://www.html5rocks.com/en/tutorials/](‬HTML5 ROCKS ‪/‬ HOW BROWSERS WORK‪:‬ BEHIND THE SCENES OF MODERN WEB BROWSER‪)‬
 
 ‏<a href="http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/">HTML5 ROCKS/ HOW BROWSERS WORK: BEHIND THE SCENES OF MODERN WEB BROWSERS</a>
 
 
 الذي يلخص ابحاث دفيلبر اسرائيلية جوجلية "تالي جارسريل" , التي امضت وقت طويل في مراجعة مصادر المتصفحات.
+
 
 
 
@@ -49,7 +51,6 @@
 
 
 ## المتصفح موجود ليه أساسن؟:
-
 
 
 
@@ -120,9 +121,7 @@
 
 ‏### Chapter 2
 
-‏## THE RENDERING ENGINE ‪##‬
-
-
+‏THE RENDERING ENGINE ‪##‬
 
 
 وضيفته هي  عرض المكونات المطلوبة علي الشاشة…
@@ -157,7 +156,6 @@
 ‏## THE MAIN FLOW:
 
 
-
 يبدأ الــrendering engine بتجميع المكونات المطلوبة من الشبكة Network Layer.
 غالبا، بيقسمها علي ٨ كيلو قطعة.
 الخطوات الاساسية للــrendering engine تتمثل في الخطوات التالية:
@@ -172,7 +170,7 @@
 الـ"render tree‪"‬،
 بتحتوي علي المستطيلات بمكونات مرئية كالوان أو مساحات. المستطيلات تكون بالترتيب الصحيح لكي تعرض علي شاشة.
 
-بعد تكوين الـrender tree ، تأتي مرحلة الـ"ـlayout"،
+بعد تكوين الـrender tree ، تأتي مرحلة الـ"ـlayout"،
 ويعني ، ان نعتي كول جزء من الشجرة (node) موقع دقيق علي الشاشة.
 
 يأتي بعد ذلك مرحلة التلوين أو الـ"painting".
@@ -211,7 +209,6 @@
 سنتحدث عنها فيما بعد.
 
 
-
 ‏### Chapter 3
 ‏# PARSING — GENERAL
 
@@ -226,18 +223,61 @@
 
 
 
-## 3.1.1 Grammars
+‏## 3.1.1 Grammars
 
 
 كل نوع ملف له القواعد الخاصة به ،  و يكون الفصل بين النصوص و الكلمات المميزة اللي بتفهم المتصفح!..تعرف ب- context free grammar.
 
-## 3.1.2 Parser - Lexer combination
+‏## 3.1.2 Parser - Lexer combination
 
-التحليل/الترجمة بينقسم إلي جزئين:
+التحليل بينقسم إلي جزئين:
 التحليل الآبجدي ، و تحليل النحو.
 التحليل الأبجدي بيقسم النص الي أجزاء صغيرة بنفس الترتيب أو Tokens.
 أما التحليل النحوي فهو تطبيق القواعد.
 
-Parsers بتنقسم الي جزئين،
+‏Parsers بتنقسم الي جزئين،
 جزء بيقسم النصوص lexer و المسؤل عن التصرف في الحروف الغريبة كالمسافة أو (سطر جديد) ،
-و الاخر  بيبني شجرة باستخدام ما تكون من الlexer علي حسب نوع الملف/النص.
+و الاخر  بيبني شجرة باستخدام ما تكون من ال lexer علي حسب نوع الملف/النص.
+
+
+
+‏Translation
+الترجمة:
+
+‏Many times the parse tree is not the final product. Parsing is often used in translation - transforming the input document to another format. An example is compilation. The compiler that compiles a source code into machine code first parses it into a parse tree and then translates the tree into a machine code document.
+تغالبا ما بيكون شجرة التحليل هي آخر حاجة...غالبا التحليل بيستخدم في الترجمة لخلق شيء جديد! ... زي تحويل الكود لكود الآلة.
+
+
+‏Figure 7: compilation flow
+
+
+
+‏Parsing example
+
+
+
+‏In figure 5 we built a parse tree from a mathematical expression. Let's try to define a simple mathematical language and see the parse process.
+من شكل 5، شجرة التحليل مكونة من عملية حسابية ،لنضرب مثال بسيط )غير واقعي(: 
+
+‏Vocabulary:
+افترض أن اللغة مكونة من -،+، و أرقام.
+
+‏Syntax:
+
+* في اللغتنا، النحو حيكون مبني من أجزاء من ‪**‬التعبيرات‪**‬ و ‪**‬المصطلحات‪**‬ و ‪**‬العمليات‪**‬ (فهمت أنا كدا؟!)
+* في اللغتنا، ‪**‬التعبيرات‪**‬ ممكن تكون كتير و ما لها حد أقصي
+* في اللغتنا، **التعبيرات‪**‬ من **مصطلح** و **عملية** ، ثم **مصتلح** و **عملية**،… إلخ.
+
+حيث، **العملية** هي: + أو - ، **المصطلح** هو رقم أو رقم ناتج من **تعبير** آخر!
+
+
+٢+٣-١ علي ثبيل المثال: الـ٢+٣ هو **تعبير** مكون من ٢و٣ كـ**مصطلحات** ، و + كـ**عملية** ، فيكون تعبير آكبر مكون من:
+ناتج الـ**تعبير** الصابق (٢+٣) و ** عملية** (-) و **مصتلح** (١).
+
+
+‏‪###‬ Formal definitions for vocabulary and syntax
+
+في الواقع، النحو ذات نفسه بيصف بالـ‪[‬regular expressions‪](http://www.regular-expressions.info/).‬
+
+
+
