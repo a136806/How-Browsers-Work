@@ -236,19 +236,25 @@
 
 ‏Parsers بتنقسم الي جزئين،
 جزء بيقسم النصوص lexer و المسؤل عن التصرف في الحروف الغريبة كالمسافة أو (سطر جديد) ،
-و الاخر  بيبني شجرة باستخدام ما تكون من ال lexer علي حسب نوع الملف/النص.
+و الاخر  بيبني شجرة باستخدام ما تكون من ال lexer علي حسب نوع الملف/النص.‪(‬parser‪)‬
+
+‏‪![Figure 6: from source document to parse trees](http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/image011.png)‬
+
+‏The parsing process is iterative. The parser will usually ask the lexer for a new token and try to match the token with one of the syntax rules. If a rule is matched, a node corresponding to the token will be added to the parse tree and the parser will ask for another token.
+
+‏If no rule matches, the parser will store the token internally, and keep asking for tokens until a rule matching all the internally stored tokens is found. If no rule is found then the parser will raise an exception. This means the document was not valid and contained syntax errors.
 
 
+‏‪##‬ Translation
 
-‏Translation
+
 الترجمة:
 
 ‏Many times the parse tree is not the final product. Parsing is often used in translation - transforming the input document to another format. An example is compilation. The compiler that compiles a source code into machine code first parses it into a parse tree and then translates the tree into a machine code document.
 تغالبا ما بيكون شجرة التحليل هي آخر حاجة...غالبا التحليل بيستخدم في الترجمة لخلق شيء جديد! ... زي تحويل الكود لكود الآلة.
 
 
-‏Figure 7: compilation flow
-
+‏‪![Figure 7: compilation flow](http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/image013.png)‬
 
 
 ‏Parsing example
@@ -277,7 +283,7 @@
 ‏‪###‬ Formal definitions for vocabulary and syntax
 
 في الواقع، النحو ذات نفسه بيصف بالـ
-‏‪[‬regular expressions‪](http://www.regular-expressions.info/).‬
+‏‪[‬ regular expressions ‪](http://www.regular-expressions.info/).‬
 
 
 
