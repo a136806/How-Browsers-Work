@@ -88,21 +88,21 @@
 
 
 
-‏‪*‬ UI:
+‏‪*‬ UI‪:‬
 	جبهة المستخدم ، التي تتضمن كل شئ ثابت، كشريت العنوان و زر الرجوع	
-‏‪*‬ The browser engine:
+‏‪*‬ The browser engine‪:‬
  اللي بيضبط الوجهات مع  rendering engine
 
-‏‪*‬ The rendering engine ‫:‬ 
+‏‪*‬ The rendering engine‪:‬ 
  مسؤل عن عرض المحتويات المطلوبة.كـدمج مكونات الــHTML5 مع الــCSS وازهارها علي الشاشة.
 
-‏‪*‬ Network:
+‏‪*‬ Network‪:‬
 مسئول عن   التعامل مع بروتكول الــHTTP 
 
-‏‪*‬ UI backend:
+‏‪*‬ UI backend‪:‬
 يستخدم  في عرض الوجهات الــUI الاساسية من نظام التشغيل OS‪.‬
 
-‏‪*‬ JavaScript interpreter:
+‏‪*‬ Javascript Interpreter‪:‬
 بيترجم و ينفذ كود الـJavaScript 
 
 ‏‪*‬ Data Storage
