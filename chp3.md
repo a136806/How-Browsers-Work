@@ -1,11 +1,11 @@
 
 
 
-‪#‬## CHAPTER 3
+‪#‬## CHAPTER 3 ###
 
 
 
-## PARSING — GENERAL
+## 3.1 PARSING — GENERAL
 
 
 التحليل أو الـParsing هي عملية هامة جدا في المحرك ‪(‬Rendering Engine‪)‬، وسوف ندخلها أكثر عمقا. دعونا نبدأ مع مقدمة قليلا عن تحليل.
@@ -18,13 +18,13 @@
 ‏‪![Figure ‬5‪: mathematical expression tree node](http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/image009.png)‬
 
 
-‪#‬# Grammer
+‪#‬# 3.1.1 Grammer ##
 
 
 كل نوع ملف له القواعد الخاصة به ،  و يكون الفصل بين النصوص و الكلمات المميزة اللي بتفهم المتصفح!..تعرف ب- context free grammar.
 
 
-‪#‬# Parser - Lexer combination 
+‪#‬# 3.1.2 Parser - Lexer combination ##
 
 التحليل بينقسم إلي جزئين:
 التحليل الآبجدي ، و تحليل النحو.
@@ -42,7 +42,8 @@
 ‏If no rule matches, the parser will store the token internally, and keep asking for tokens until a rule matching all the internally stored tokens is found. If no rule is found then the parser will raise an exception. This means the document was not valid and contained syntax errors.
 
 
-‏‪##‬ Translation
+
+## Translation ##
 
 
 ‪##‬ الترجمة‪:‬
