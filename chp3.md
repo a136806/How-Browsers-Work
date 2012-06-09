@@ -1,7 +1,7 @@
 
 
 
-‪#‬## CHAPTER 3 ###
+‪#‬ CHAPTER 3 #
 
 
 
@@ -18,13 +18,13 @@
 ‏‪![Figure ‬5‪: mathematical expression tree node](http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/image009.png)‬
 
 
-‪#‬# 3.1.1 Grammer ##
+#‪#‬# Grammer ###
 
 
 كل نوع ملف له القواعد الخاصة به ،  و يكون الفصل بين النصوص و الكلمات المميزة اللي بتفهم المتصفح!..تعرف ب- context free grammar.
 
 
-‪#‬# 3.1.2 Parser - Lexer combination ##
+#‪#‬# 3.1.2 Parser - Lexer combination ###
 
 التحليل بينقسم إلي جزئين:
 التحليل الآبجدي ، و تحليل النحو.
@@ -46,7 +46,8 @@
 ## Translation ##
 
 
-‪##‬ الترجمة‪:‬
+## الترجمة ‪##‬
+
 
 ‏Many times the parse tree is not the final product. Parsing is often used in translation - transforming the input document to another format. An example is compilation. The compiler that compiles a source code into machine code first parses it into a parse tree and then translates the tree into a machine code document.
 تغالبا ما بيكون شجرة التحليل هي آخر حاجة...غالبا التحليل بيستخدم في الترجمة لخلق شيء جديد! ... زي تحويل الكود لكود الآلة.
@@ -78,7 +79,8 @@
 ناتج الـ**تعبير** الصابق (٢+٣) و ** عملية** (-) و **مصتلح** (١).
 
 
-‏‪###‬ Formal definitions for vocabulary and syntax
+‪#‬## Formal definitions for vocabulary and syntax ###
+
 
 في الواقع، النحو ذات نفسه بيصف بالـ
 ‏‪[‬ regular expressions ‪](http://www.regular-expressions.info/).‬
