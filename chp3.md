@@ -15,13 +15,13 @@
 ‏‪![Figure ‬5‪: mathematical expression tree node](http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/image009.png)‬
 
 
-#‪#‬# Grammer
+## 3.1.1 GRAMMER
 
 
 كل نوع ملف له القواعد الخاصة به ،  و يكون الفصل بين النصوص و الكلمات المميزة اللي بتفهم المتصفح!..تعرف ب- context free grammar.
 
 
-#‪#‬# 3.1.2 Parser - Lexer combination
+#‪#‬# 3.1.2 PARSER-LEXER COMBINATION
 
 التحليل بينقسم إلي جزئين:
 التحليل الآبجدي ، و تحليل النحو.
