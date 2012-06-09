@@ -1,6 +1,5 @@
-‪#‬CHAPTER 3
 
-
+# CHAPTER 3
 
 ## 3.1 PARSING — GENERAL
 
@@ -21,7 +20,7 @@
 كل نوع ملف له القواعد الخاصة به ،  و يكون الفصل بين النصوص و الكلمات المميزة اللي بتفهم المتصفح!..تعرف ب- context free grammar.
 
 
-#‪#‬# 3.1.2 PARSER-LEXER COMBINATION
+#‪#‬ 3.1.2 PARSER-LEXER COMBINATION
 
 التحليل بينقسم إلي جزئين:
 التحليل الآبجدي ، و تحليل النحو.
