@@ -1,7 +1,7 @@
-‏‪###‬ CHAPTER 3
+‪#‬## CHAPTER 3
 
 
-‏‪#‬ PARSING — GENERAL
+## PARSING — GENERAL
 
 
 التحليل أو الـParsing هي عملية هامة جدا في المحرك ‪(‬Rendering Engine‪)‬، وسوف ندخلها أكثر عمقا. دعونا نبدأ مع مقدمة قليلا عن تحليل.
@@ -14,7 +14,7 @@
 ‏‪![Figure ‬5‪: mathematical expression tree node](http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/image009.png)‬
 
 
-‏‪##‬ 3.1.1 Grammars
+‪#‬# 3.1.1 Grammer
 
 
 كل نوع ملف له القواعد الخاصة به ،  و يكون الفصل بين النصوص و الكلمات المميزة اللي بتفهم المتصفح!..تعرف ب- context free grammar.
