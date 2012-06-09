@@ -1,4 +1,8 @@
+
+
+
 ‪#‬## CHAPTER 3
+
 
 
 ## PARSING — GENERAL
@@ -14,12 +18,13 @@
 ‏‪![Figure ‬5‪: mathematical expression tree node](http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/image009.png)‬
 
 
-‪#‬# 3.1.1 Grammer
+‪#‬# Grammer
 
 
 كل نوع ملف له القواعد الخاصة به ،  و يكون الفصل بين النصوص و الكلمات المميزة اللي بتفهم المتصفح!..تعرف ب- context free grammar.
 
-‏‪##‬ 3‪.‬1‪.‬2 Parser - Lexer combination
+
+‪#‬# Parser - Lexer combination 
 
 التحليل بينقسم إلي جزئين:
 التحليل الآبجدي ، و تحليل النحو.
