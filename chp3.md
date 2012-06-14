@@ -106,6 +106,8 @@ term := INTEGER | expression
 
 عامتا، طريقة BNF ،من غير حاجات زيادة أو محتويات أو context free grammar ، بتشتغل مع أي parser تقليدي.
 
+>An intuitive definition of a [context free grammar](http://en.wikipedia.org/wiki/Context-free_grammar) is a grammar that can be entirely expressed in BNF
+
 ### 3.1.6 Types of parsers
 
 في نوعان أساسيان من parsers ، واحد بيشتغل من فوق لتحت و الآخر من تحت لفوق.
