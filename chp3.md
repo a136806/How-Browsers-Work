@@ -1,4 +1,3 @@
-
 # CHAPTER 3
 
 ## 3.1 PARSING — GENERAL
@@ -84,4 +83,35 @@
 ‏‪[‬ regular expressions ‪](http://www.regular-expressions.info/).‬
 
 
+سعتها ممكن نعرف لغتنا بالشكل دا، مستجدمين ال-[Regular Expression](http://en.wikipedia.org/wiki/Regular_expression) :
 
+INTEGER :0|[1-9][0-9]*
+PLUS : +
+MINUS: -
+و غالبا النحو بيعرف بطرقة BNF.
+ممكن نعرف لغتنا بهذا الشكل:
+expression :=  term  operation  term
+operation :=  PLUS | MINUS
+term := INTEGER | expression
+
+عامتا، طريقة BNF ،من غير حاجات زيادة أو محتويات أو context free grammar ، بتشتغل مع أي parser تقليدي.
+
+### 3.1.6 Types of parsers
+
+في نوعان أساسيان من parsers ، واحد بيشتغل من فوق لتحت و الآخر من تحت لفوق.
+بمعني، أن لو عرفت الحاجات الأساسية السهلة ممكن تجيب بيها الحاجات الأصعب و المعقدة (من تحت لفوق) ، أو العكس، تجيب الحاجات الصعبة المعقدة و تبحث عن علاقة بها و بين الحاجات اللي لسة ما قرأتها (من فوق لتحت).
+
+
+يعني parser لو قرأها من فوق لتحت ، حيعتبر 2 + 3 مصتلح (expression) ، و 2+3-1 كمصتلح أكبر مرتبط.
+
+Parsers اللي بتقرأ من تحت-فوق بتستخدم
+StackInput:
+
+The bottom up parser will scan the input until a rule is matched it will then replace the matching input with the rule. This will go on until the end of the input. The partly matched expression is placed on the parsers stack.StackInput
+ 2 + 3 - 1
+term+ 3 - 1
+term operation3 - 1
+expression- 1
+expression operation1
+expression 
+This type of bottom up parser is called a shift-reduce parser, because the input is shifted to the right (imagine a pointer pointing first at the input start and moving to the right) and is gradually reduced to syntax rules.
