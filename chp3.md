@@ -85,14 +85,24 @@
 
 سعتها ممكن نعرف لغتنا بالشكل دا، مستجدمين ال-[Regular Expression](http://en.wikipedia.org/wiki/Regular_expression) :
 
+
+
 INTEGER :0|[1-9][0-9]*
+
 PLUS : +
+
 MINUS: -
+
+
 و غالبا النحو بيعرف بطرقة BNF.
 ممكن نعرف لغتنا بهذا الشكل:
+
 expression :=  term  operation  term
+
 operation :=  PLUS | MINUS
+
 term := INTEGER | expression
+
 
 عامتا، طريقة BNF ،من غير حاجات زيادة أو محتويات أو context free grammar ، بتشتغل مع أي parser تقليدي.
 
