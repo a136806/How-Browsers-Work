@@ -116,14 +116,48 @@ term := INTEGER | expression
 
 يعني parser لو قرأها من فوق لتحت ، حيعتبر 2 + 3 مصتلح (expression) ، و 2+3-1 كمصتلح أكبر مرتبط.
 
-Parsers اللي بتقرأ من تحت-فوق بتستخدم
-StackInput:
 
-The bottom up parser will scan the input until a rule is matched it will then replace the matching input with the rule. This will go on until the end of the input. The partly matched expression is placed on the parsers stack.StackInput
- 2 + 3 - 1
-term+ 3 - 1
-term operation3 - 1
-expression- 1
-expression operation1
+Stack 				Input
+						2 + 3 - 1
+term					+ 3 - 1
+term operation			3 - 1
+expression				- 1
+expression operation	1
 expression 
-This type of bottom up parser is called a shift-reduce parser, because the input is shifted to the right (imagine a pointer pointing first at the input start and moving to the right) and is gradually reduced to syntax rules.
+
+<table>
+<tr>
+<td>Stack</td>						<td>Input</td>
+</tr>
+<tr>
+<td></td>							<td>2 + 3 - 1</td>
+</tr>
+<tr>
+<td>term</td>						<td>+ 3 - 1</td>
+</tr>
+<tr>
+<td>term operation</td>			<td>3 - 1</td>
+</tr>
+<tr>
+<td>expression</td>				<td>- 1</td>
+</tr>
+<tr>
+<td>expression operation</td>		<td>1</td>
+</tr>
+<tr>
+<td>expression</td> 
+</tr></table>
+
+	يسمي أي بـ"shift‪-‬reduce parser" ،لأنه بيحذف اللي قرأه من اللمين .
+
+### Generating parsers automatically
+
+هناك أدوات لكي تكون محللات بالغة السرعة و دقيقة، حيث تشرح لها النحو المستخدم و هي تكون منه محلل خاص،parser.
+WebKit بيستخدم Flex
+ كــ(lexer/tokenizer) لتقسيم المدخرات المكتوبة بالـ"regular experssion"
+و Bison كـ(parser) لتكوين شجرة التحليل من مدخرات المكتوبة بالـ"BNF".
+
+
+## HTML PARSER
+
+مهمة الـHTML Parser، هي تكوين شجرة التحليل من الـHTML، 
